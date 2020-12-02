@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import serenity.dvsum.steps.Login;
 
 public class EditViewSteps {
 
@@ -19,21 +20,21 @@ public class EditViewSteps {
     @Before
     public void checoCanBrowserTheWeb(){
         checo.can(BrowseTheWeb.with(hisBrowser));
+        checo.wasAbleTo(Login.withValidCredentials());
     }
 
     @Given("User is on Column Dictionary Page on DvSum App")
     public void givenMethodForEditViewStep(){
-        System.out.println("he");
+//        checo.wasAbleTo(Land.onColumnDictionaryPage());
     }
 
     @When("User edits a view")
     public void whenMethodForEditViewStep(){
-        System.out.println("hetewo");
+//        checo.attemptsTo(EditView.named("testView"));
     }
 
     @Then("View should be updated with edited details")
     public void thenMethodForEditViewStep(){
-        System.out.println("hehi");
     }
 
 }
