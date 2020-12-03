@@ -3,14 +3,15 @@ package serenity.dvsum.steps;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 
+import java.util.List;
+import java.util.Map;
+
 public class EditView {
 
-    public static Performable named(String viewName) {
-        return Task.where("{0} edits a view named #viewName"
-//                ,
-//                Edit.openViewNamed(viewName).
-//                setViewNameToBe("editedViewName").
-//                selectColumns().save()
+    public static Performable with(List<Map<String, String>> viewData) {
+        return Task.where("{0} edits the view",
+                SelectViewFromDropdown.named(viewData.get(0).get("viewName")),
+                SelectViewAction.editView()
         );
     }
 }

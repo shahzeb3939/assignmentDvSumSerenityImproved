@@ -1,13 +1,11 @@
 package serenity.dvsum.steps;
 
-import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
-import org.openqa.selenium.Keys;
 
 import static org.openqa.selenium.Keys.ENTER;
-import static serenity.dvsum.components.DvsumLoginForm.DVSUM_EMAIL_FIELD;
-import static serenity.dvsum.components.DvsumLoginForm.DVSUM_PASSWORD_FIELD;
+import static serenity.dvsum.components.dvsumlogin.DvsumLoginForm.DVSUM_EMAIL_FIELD;
+import static serenity.dvsum.components.dvsumlogin.DvsumLoginForm.DVSUM_PASSWORD_FIELD;
 
 public class DvsumLogin {
 

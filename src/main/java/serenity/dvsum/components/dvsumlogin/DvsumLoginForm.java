@@ -1,4 +1,4 @@
-package serenity.dvsum.components;
+package serenity.dvsum.components.dvsumlogin;
 
 import net.serenitybdd.screenplay.targets.Target;
 

@@ -3,7 +3,7 @@ package serenity.dvsum.steps;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
-import serenity.dvsum.components.DvsumLoginForm;
+import serenity.dvsum.components.dvsumlogin.DvsumLoginForm;
 
 public class Login {
     public static Performable withValidCredentials() {
