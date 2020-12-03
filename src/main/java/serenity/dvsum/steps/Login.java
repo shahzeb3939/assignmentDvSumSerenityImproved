@@ -9,7 +9,7 @@ public class Login {
     public static Performable withValidCredentials() {
         return Task.where("{0} logins by entering valid credentials",
                 Open.browserOn().thePageNamed("home.page"),
-                DvsumLogin.enterCredentials(
+                DvsumLogin.enterCredentialsAndLogin(
                         DvsumLoginForm.enterEmail(),
                         DvsumLoginForm.enterPassword()
                 ));

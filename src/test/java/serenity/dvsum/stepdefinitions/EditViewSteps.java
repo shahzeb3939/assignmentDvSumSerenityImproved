@@ -1,6 +1,8 @@
 package serenity.dvsum.stepdefinitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -8,7 +10,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import serenity.dvsum.steps.EditView;
+import serenity.dvsum.steps.Land;
 import serenity.dvsum.steps.Login;
+
+import java.util.List;
 
 public class EditViewSteps {
 
@@ -20,7 +26,7 @@ public class EditViewSteps {
     @Before
     public void checoCanBrowserTheWeb(){
         checo.can(BrowseTheWeb.with(hisBrowser));
-        checo.wasAbleTo(Login.withValidCredentials());
+//        checo.wasAbleTo(Login.withValidCredentials());
     }
 
     @Given("User is on Column Dictionary Page on DvSum App")
@@ -29,12 +35,21 @@ public class EditViewSteps {
     }
 
     @When("User edits a view")
-    public void whenMethodForEditViewStep(){
-//        checo.attemptsTo(EditView.named("testView"));
+    public void whenMethodForEditViewStep(DataTable table){
+
+        System.out.println(table.asMaps());
+//        checo.attemptsTo(EditView.named("testData"));
     }
 
     @Then("View should be updated with edited details")
     public void thenMethodForEditViewStep(){
     }
+
+
+
+
+
+
+
 
 }

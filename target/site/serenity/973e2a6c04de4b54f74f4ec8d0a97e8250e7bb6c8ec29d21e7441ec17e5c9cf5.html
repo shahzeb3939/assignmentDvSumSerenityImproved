@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-12-2020 15:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-12-2020 16:22</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -243,9 +243,61 @@
 
     <div class="clr"></div>
 
+        <div class="story-title">
+            <h3 class="story-header">Scenario Outline</h3>
+
+            <div class="scenario">Given User is on Column Dictionary Page on DvSum App<br>When User edits a view<br><table class='embedded'><thead><th>viewName</th><th>newViewName</th><th>databaseType</th><th>databaseFilter</th><th>databaseName</th><th>columnsToBeSelected</th></thead><tbody><tr><td>&lt;viewName&gt;</td><td>&lt;newViewName&gt;</td><td>&lt;databaseType&gt;</td><td>&lt;databaseFilter&gt;</td><td>&lt;databaseName&gt;</td><td>&lt;columnsToBeSelected&gt;</td></tr></tbody></table><br>Then View should be updated with edited details</div>
+
+        </div>
 
     <div id="beforetable"></div>
 
+
+            <h3 class="story-header">Examples:&nbsp;</h3>
+                <div class="requirementNarrative"></div>
+
+
+                <p class="example-tag">
+                </p>
+
+            <div class="example-table test-report">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                            <th>View Name</th>
+                            <th>New View Name</th>
+                            <th>Database Type</th>
+                            <th>Database Filter</th>
+                            <th>Database Name</th>
+                            <th>Columns To Be Selected</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="test-SUCCESS"><a href="#0">1</a></td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">testView</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">testViewEdited</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Source</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Excludes</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">sarah db</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">Primary Key, Density, Count Blanks, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level</a>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
     <div id="tablecontents">
         <div>
@@ -257,7 +309,6 @@
                         Steps
                     </th>
 
-                        <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
                     <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
@@ -281,7 +332,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Checo logins by entering valid credentials
+                                                Example: {viewName=testView, newViewName=testViewEdited, databaseType=Source, databaseFilter=Excludes, databaseName=sarah db, columnsToBeSelected=Primary Key, Density, Count Blanks, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level}
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -289,24 +340,8 @@
                             </div>
                         </td>
 
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=0">
-                                        <img src="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             href="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=8">
-                                        <img src="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             href="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">10.33s</span></td>
+                        <td width="100"><span class="top-level-step">0.11s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -324,168 +359,6 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Checo opens the home.page
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=1">
-                                        <img src="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             href="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">8.89s</span></td>
-                    </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="0-1"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection0-1 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Checo enters username and password in Dvsum Login Form and press Login
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=2">
-                                        <img src="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             href="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=7">
-                                        <img src="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             href="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">1.42s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection0-1" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="90" class="step-icon">
-                            <a name="0-1-0"></a>
-                                <span style="margin-left: 60px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Checo enters 'testautomation@dvsum.com' into Email field in DvSum Login Form
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=3">
-                                        <img src="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             href="0fd99db450114522efb102bf011d18f0755a94397331e6602f27433571ab3e2f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=4">
-                                        <img src="52f7f5d0cf72efd6a553224a7dd01f10f8a80e1a9c0b8a6c8228379bb4e08f8f.png"
-                                             href="52f7f5d0cf72efd6a553224a7dd01f10f8a80e1a9c0b8a6c8228379bb4e08f8f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.72s</span></td>
-                    </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="90" class="step-icon">
-                            <a name="0-1-1"></a>
-                                <span style="margin-left: 60px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Checo enters '1@Qwerty' into Password field in DvSum Login Form
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=5">
-                                        <img src="52f7f5d0cf72efd6a553224a7dd01f10f8a80e1a9c0b8a6c8228379bb4e08f8f.png"
-                                             href="52f7f5d0cf72efd6a553224a7dd01f10f8a80e1a9c0b8a6c8228379bb4e08f8f.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=6">
-                                        <img src="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             href="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.68s</span></td>
-                    </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="1"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
                                                 Given User is on Column Dictionary Page on DvSum App
                                         </span>
                                 <span class="evidence">
@@ -493,61 +366,43 @@
                             </div>
                         </td>
 
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=10">
-                                        <img src="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             href="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
                     </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="2"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                        <td width="70" class="step-icon">
+                            <a name="0-1"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                    <span class="top-level-step">
-                                                When User edits a view
+                                    <span class="nested-group-step">
+                                                When User edits a view<br><table class='embedded'><thead><th>viewName</th><th>newViewName</th><th>databaseType</th><th>databaseFilter</th><th>databaseName</th><th>columnsToBeSelected</th></thead><tbody><tr><td>testView</td><td>testViewEdited</td><td>Source</td><td>Excludes</td><td>sarah db</td><td>Primary Key, Density, Count Blanks, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level</td></tr></tbody></table>
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=11">
-                                        <img src="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             href="e78cbda0b3d49bd75521174ef9b44e90817696832b1424a8bd3e4f2c5b4d3e63.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
                     </tr>
                     <tr class="test-SUCCESS">
 
-                        <td width="50" class="step-icon">
-                            <a name="3"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                        <td width="70" class="step-icon">
+                            <a name="0-2"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                    <span class="top-level-step">
+                                    <span class="nested-group-step">
                                                 Then View should be updated with edited details
                                         </span>
                                 <span class="evidence">
@@ -555,22 +410,17 @@
                             </div>
                         </td>
 
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5_screenshots.html#screenshots?screenshot=12">
-                                        <img src="cf8ea89a7b3d118ead2dc616c7a26ccd45e5b7e149fcd0aeadb364bd5981cc36.png"
-                                             href="cf8ea89a7b3d118ead2dc616c7a26ccd45e5b7e149fcd0aeadb364bd5981cc36.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.45s</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
                     </tr>
+
+                                </table>
+                            </td>
+                        </tr>
                 <tr class="test-SUCCESS">
-                        <td colspan="3"></td>
+                        <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>11.32s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.26s</em></span></td>
                 </tr>
 
             </table>

@@ -1,5 +1,5 @@
-Serenity report generated 02-12-2020 15:29
-1 test scenarios 
+Serenity report generated 03-12-2020 16:22
+1 test scenarios (1 tests in all, including 1 rows of test data)
 
 Passed:             1
 Pending             0

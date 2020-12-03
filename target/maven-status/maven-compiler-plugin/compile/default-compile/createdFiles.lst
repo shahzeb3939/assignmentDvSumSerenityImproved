@@ -1,0 +1,5 @@
+serenity\dvsum\steps\DvsumLogin.class
+serenity\dvsum\steps\Login.class
+serenity\dvsum\steps\Land.class
+serenity\dvsum\steps\EditView.class
+serenity\dvsum\components\DvsumLoginForm.class
