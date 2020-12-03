@@ -1,5 +1,9 @@
 serenity\dvsum\steps\DvsumLogin.class
-serenity\dvsum\steps\Login.class
 serenity\dvsum\steps\Land.class
+serenity\dvsum\components\columndictionary\ViewSetting.class
+serenity\dvsum\components\dvsumlogin\DvsumLoginForm.class
+serenity\dvsum\steps\SelectViewSetting.class
+serenity\dvsum\components\columndictionary\ViewDropdown.class
+serenity\dvsum\steps\Login.class
 serenity\dvsum\steps\EditView.class
-serenity\dvsum\components\DvsumLoginForm.class
+serenity\dvsum\steps\SelectViewFromDropdown.class

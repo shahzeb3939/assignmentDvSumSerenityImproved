@@ -11,7 +11,7 @@ public class EditView {
     public static Performable with(List<Map<String, String>> viewData) {
         return Task.where("{0} edits the view",
                 SelectViewFromDropdown.named(viewData.get(0).get("viewName")),
-                SelectViewAction.editView()
+                SelectViewSetting.editView()
         );
     }
 }
