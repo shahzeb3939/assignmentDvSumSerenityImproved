@@ -13,7 +13,6 @@ import serenity.dvsum.steps.EditView;
 import serenity.dvsum.steps.Land;
 import serenity.dvsum.steps.Login;
 
-import java.util.List;
 import java.util.Map;
 
 public class EditViewSteps {
@@ -36,7 +35,7 @@ public class EditViewSteps {
 
     @When("User edits a view")
     public void whenMethodForEditViewStep(DataTable table){
-        List<Map<String, String>> viewData = table.asMaps();
+        Map<String, String> viewData = table.asMaps().get(0);
         checo.attemptsTo(EditView.with(viewData));
     }
 

@@ -9,4 +9,4 @@ Feature: Edit View
 
     Examples:
     | viewName | newViewName    | databaseType | databaseFilter | databaseName | columnsToBeSelected                                                                                                                                                                               |
-    | testView | testViewEdited | Source       | Excludes       | sarah db     | Primary Key, Density, Count Blanks, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level |
+    | testView | testViewEdited | Dataset       | Includes       | SCHOOL_SETTINGS     | Primary Key, Density, Dataset, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level |
