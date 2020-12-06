@@ -5,7 +5,7 @@ Feature: Edit View
     When User edits a view
     | viewName   | newViewName   | databaseType   | databaseFilter   | databaseName   | columnsToBeSelected   |
     | <viewName> | <newViewName> | <databaseType> | <databaseFilter> | <databaseName> | <columnsToBeSelected> |
-    Then View should be updated with edited details
+    Then View should have the name <newViewName>
 
     Examples:
     | viewName | newViewName    | databaseType | databaseFilter | databaseName | columnsToBeSelected                                                                                                                                                                               |

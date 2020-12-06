@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: serenity.dvsum.acceptancetests.AcceptanceTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.302 s <<< FAILURE! - in serenity.dvsum.acceptancetests.AcceptanceTestSuite
-Edit View.Editing a DvSum View  Time elapsed: 48.13 s  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: is "tedited"
-     but: was "testViewEdited"
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 63.023 s - in serenity.dvsum.acceptancetests.AcceptanceTestSuite

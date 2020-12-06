@@ -47,12 +47,10 @@ public class EditViewSteps {
         checo.attemptsTo(EditView.with(viewData));
     }
 
-    @Then("View should be updated with edited details")
-    public void thenMethodForEditViewStep(){
+    @Then("View should have the name {word}")
+    public void thenMethodForEditViewStep(String newViewName){
         checo.should(
-                seeThat(SelectedView.name(), is(equalTo("testViewEdited")))
+                seeThat(SelectedView.name(), is(equalTo(newViewName)))
         );
     }
-
-
 }
