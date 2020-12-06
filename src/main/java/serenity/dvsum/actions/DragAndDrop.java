@@ -5,6 +5,7 @@ import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.interactions.Actions;
 
@@ -26,7 +27,7 @@ public class DragAndDrop implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         Actions action = new Actions(BrowseTheWeb.as(actor).getDriver());
-        action.dragAndDrop(column, selectedColumnField);
+        action.dragAndDrop(column.getElement(), selectedColumnField.getElement()).build().perform();
     }
 
     public DragAndDrop to(WebElementFacade selectedColumnField) {

@@ -4,6 +4,8 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import org.openqa.selenium.interactions.Actions;
 import serenity.dvsum.actions.DragAndDrop;
 
 import java.util.List;
@@ -25,7 +27,7 @@ public class DragSelectedColumns implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         columnsToBeSelected.forEach(column->{
-            DragAndDrop.from(column).to(SELECTED_COLUMN_FIELD.resolveFor(actor));
+            actor.attemptsTo(DragAndDrop.from(column).to(SELECTED_COLUMN_FIELD.resolveFor(actor)));
         });
     }
 }
