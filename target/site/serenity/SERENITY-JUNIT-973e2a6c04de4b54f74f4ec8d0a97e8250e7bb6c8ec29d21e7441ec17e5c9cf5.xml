@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Edit View" skipped="0" tests="1" time="47.74" timestamp="2020-12-06 11:41:15"><testcase name="Editing a DvSum View"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Edit View" skipped="0" tests="1" time="47.81" timestamp="2020-12-06 08:12:01"><testcase name="Editing a DvSum View"><failure message="&#10;Expected: is &quot;tedited&quot;&#10;     but: was &quot;testViewEdited&quot;" type="java.lang.AssertionError">
+Expected: is "tedited"
+     but: was "testViewEdited"</failure><system-err>
+Expected: is "tedited"
+     but: was "testViewEdited"&#13;
+assignmentDvSumSerenityImproved@1.0-SNAPSHOT/serenity.dvsum.stepdefinitions.EditViewSteps.thenMethodForEditViewStep(EditViewSteps.java:52)&#13;
+✽.View should be updated with edited details(file:///C:/Users/Emumba/IdeaProjects/assignmentDvSumSerenityImproved/src/test/resources/features/dvsum/edit_view.feature:8)&#13;
+</system-err></testcase></testsuite>

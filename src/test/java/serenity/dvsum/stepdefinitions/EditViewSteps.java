@@ -7,13 +7,21 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.ensure.Ensure;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import serenity.dvsum.components.columndictionary.ViewDropdown;
+import serenity.dvsum.questions.SelectedView;
 import serenity.dvsum.steps.EditView;
 import serenity.dvsum.steps.Land;
 import serenity.dvsum.steps.Login;
 
 import java.util.Map;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.core.Is.is;
 
 public class EditViewSteps {
 
@@ -41,13 +49,10 @@ public class EditViewSteps {
 
     @Then("View should be updated with edited details")
     public void thenMethodForEditViewStep(){
+        checo.should(
+                seeThat(SelectedView.name(), is(equalTo("testViewEdited")))
+        );
     }
-
-
-
-
-
-
 
 
 }

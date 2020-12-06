@@ -221,7 +221,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-12-2020 11:41</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-12-2020 20:12</span>
     <br style="clear:left"/>
 </div>
 
@@ -290,7 +290,7 @@
                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5.html"
                                                                                title="View test results">
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                                                             </a>
 
                                                                         
@@ -313,7 +313,7 @@
                                             <h3>Scenario details</h3>
 
                                                 <div class="scenario-docs card" id="74c28794abecbf4bd3e01de5baa3845c1b5d21e55bb0edbd28ea856e466ad0cf">
-                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header failure" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5.html" title="View test results">Editing a DvSum View</a>
@@ -321,7 +321,7 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                                                    <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -347,7 +347,7 @@
 <tr><th>viewName</th><th>newViewName</th><th>databaseType</th><th>databaseFilter</th><th>databaseName</th><th>columnsToBeSelected</th><th></th></tr>
 </thead>
 <tbody>
-<tr><td>testView</td><td>testViewEdited</td><td>Dataset</td><td>Includes</td><td>SCHOOL_SETTINGS</td><td>Primary Key, Density, Dataset, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level</td><td><a href='973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5.html#beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></td></tr>
+<tr><td>testView</td><td>testViewEdited</td><td>Dataset</td><td>Includes</td><td>SCHOOL_SETTINGS</td><td>Primary Key, Density, Dataset, Profile Status, Source, Entity Type, Length, User Description, Source Type, Column, Distribution Type, Column Type, Min Value, Foreign Key, Sensitivity Level</td><td><a href='973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5.html#beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></td></tr>
 </tbody>
 </table></div>
 </p>
@@ -369,10 +369,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -409,12 +409,11 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count">
-                                                                        <a href="a1a4cea9cf9daa7bc8d44c27239137c4b5de7550750d1179291037c5480ffaa0.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                     </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -438,19 +437,19 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                             <td colspan="3"><a href="f71216637805fa120818a80f39bbb7cfc0a02d61e4c53a0afdd2104287d2b654.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
 
                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
-                                                                </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="8e004d38f862cda91628fa5a2eced6ba4aadb50d6cd2c654eec743e13b7f9cac.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -517,7 +516,7 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result SUCCESS">
+                                                <tr class="scenario-result FAILURE">
                                                     <td>
                                                             <a href="973e2a6c04de4b54f74f4ec8d0a97e8250e7bb6c8ec29d21e7441ec17e5c9cf5.html">Editing a DvSum View</a>
                                                                (1 example)
@@ -526,8 +525,8 @@
                                                     <td> </td>
                                                     <td> </td>
                                                     <td>
-                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                style="display:none">SUCCESS</span>
+                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
+                                                                style="display:none">FAILURE</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>
