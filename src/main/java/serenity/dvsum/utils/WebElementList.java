@@ -23,6 +23,7 @@ public class WebElementList {
             listOfWebElement.add(targetFromXpathString.resolveFor(asActor));
         });
 
+
         return listOfWebElement;
     }
 }

@@ -13,25 +13,25 @@ import java.nio.file.attribute.FileTime;
 
 public class DragAndDrop implements Interaction {
 
-    private WebElementFacade column;
-    private WebElementFacade selectedColumnField;
+    private Target source;
+    private Target target;
 
-    public DragAndDrop(WebElementFacade column){
-        this.column = column;
+    public DragAndDrop(Target source){
+        this.source = source;
     }
 
-    public static DragAndDrop from(WebElementFacade column) {
-        return Instrumented.instanceOf(DragAndDrop.class).withProperties(column);
+    public static DragAndDrop from(Target source) {
+        return Instrumented.instanceOf(DragAndDrop.class).withProperties(source);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         Actions action = new Actions(BrowseTheWeb.as(actor).getDriver());
-        action.dragAndDrop(column.getElement(), selectedColumnField.getElement()).build().perform();
+        action.dragAndDrop(source.resolveFor(actor), target.resolveFor(actor)).build().perform();
     }
 
-    public DragAndDrop to(WebElementFacade selectedColumnField) {
-        this.selectedColumnField = selectedColumnField;
+    public DragAndDrop to(Target target) {
+        this.target = target;
         return this;
     }
 }

@@ -17,6 +17,6 @@ public class EditViewForm {
             .locatedBy("//button[contains(.,'Save')]");
     public static final Target DESELECT_ALL_COLUMNS = Target.the("Deselect all columns")
             .locatedBy("#dbox_de_select_all");
-    public static final Target SELECTED_COLUMN_FIELD = Target.the("Empty select column field")
+    public static final Target TARGET_COLUMN = Target.the("Empty select column field")
             .locatedBy("//ul[@id='selectedColumns']");
 }

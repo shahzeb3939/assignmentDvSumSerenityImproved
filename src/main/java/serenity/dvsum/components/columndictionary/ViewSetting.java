@@ -7,4 +7,7 @@ public class ViewSetting {
             .locatedBy("//button[@data-toggle='dropdown']");
     public static final Target EDIT_VIEW_BUTTON = Target.the("Edit view button")
             .locatedBy("#editViewBtn");
+
+    public static final Target SOURCE_COLUMN = Target.the("Available Columns")
+            .locatedBy("//ul[@id='avaiableColumns']//div[normalize-space()='{0}']");
 }
